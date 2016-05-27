@@ -7,23 +7,31 @@
 <body>
 
 <div class="container">
+  <h3>Service details</h3>
+  <p><b>For testing, Postman may be used to perform post/put/delete & get operations</b></p>
+  <p>For Post and put operation x-www-form-urlencoded content type is used</p>
+</div>
+
+<div class="container">
   <h3>Get Contact</h3>
-  <p><b>This helps the user to add a contact, delete a contact, modify a contact, view one or all the contacts</b></p>
-  <p>This page is created only for a testing purpose . Navigate through each link to know about the service calls</p>
+  <p><b>This helps the user to get contact details</b></p>
+  <p>Url_path=http://localhost:8080/restContact/rest/contacts</p>
+   <h4>For retrieving based on name/part of name (case-sensitive)</h4>
+  <p>Url_path=http://localhost:8080/restContact/rest/contacts/contact/{contactName}</p>
 </div>
 
 <div class="container">
   <h3>Delete Contact</h3>
-  <p><b>This helps the user to add a contact, delete a contact, modify a contact, view one or all the contacts</b></p>
-  <p>This page is created only for a testing purpose . Navigate through each link to know about the service calls</p>
+  <p><b>This helps the user to delete a contact one of the contacts by name (case-sensitive)</b></p>
+  <p>Url_path=http://localhost:8080/restContact/rest/contacts/contact/delete/{contactname}</p>
 </div>
 
 <div class="container">
   <h3>Post/Put</h3>
-  <p><b>This helps the user to add a contact, delete a contact, modify a contact, view one or all the contacts</b></p>
-  <p>This page is created only for a testing purpose . Navigate through each link to know about the service calls</p>
+  <p><b>This helps the user to add a contact and modify a contact</b></p>
+  <p> Url_path=http://localhost:8080/restContact/rest/contacts/add</p>
+  <p> Url_path=http://localhost:8080/restContact/rest/contacts/modify</p>
 </div>
-
 
  <li><a href="index.html">Back</a></li>
 
