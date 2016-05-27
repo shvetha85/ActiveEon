@@ -1,15 +1,12 @@
 package com.contact.rest;
 
 
-import java.util.Map;
-
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
-import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
@@ -18,7 +15,6 @@ import javax.xml.bind.JAXBElement;
 
 import com.contact.bean.Contact;
 import com.contact.storage.ContactStore;
-import com.contacts.impl.ContactImpl;
 import com.sun.jersey.api.NotFoundException;
 
 public class ContactResource {
@@ -49,15 +45,6 @@ public class ContactResource {
 		Contact c = jaxbContact.getValue();
 		return putAndGetResponse(c);
 	}
-	
-	/*@PUT
-	public Response putContact(@Context HttpHeaders herders, byte[] in) {
-		ContactImpl conImpl=new ContactImpl();
-		Map<String,String> params = conImpl.parse(new String(in));
-		Contact c = new Contact(params.get("id"), params.get("name"), 
-				params.get("address"),params.get("phone"));
-		return putAndGetResponse(c);
-	}*/
 	
 	private Response putAndGetResponse(Contact c) {
 		Response res;
