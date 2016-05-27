@@ -1,0 +1,45 @@
+How to Run:
+
+Option 1- Using War
+
+Download the war from https://github.com/shvetha85/ActiveEon/tree/master/restContact/target directory, and put in Tomcat webapps folder.
+Start Tomcat and access the FOllowing Url's
+  
+For testing, Postman may be used to perform post or put, delete and get operations    
+For Post and put operation x-www-form-urlencoded content type is used  
+  
+
+      
+Get Contact
+
+This helps the user to get contact details    
+Url_path=http://localhost:8080/restContact-0.0.1-SNAPSHOT/rest/contacts  
+
+For retrieving based on name/part of name (case-sensitive)
+Url_path=http://localhost:8080/restContact-0.0.1-SNAPSHOT/rest/contacts/contact/{contactName}    
+
+      
+Delete Contact
+
+This helps the user to delete a contact one of the contacts by name (case-sensitive)    
+Url_path=http://localhost:8080/restContact-0.0.1-SNAPSHOT/rest/contacts/contact/delete/{contactname}  
+  
+
+Post- Add 
+
+This helps the user to add a contact and modify a contact    
+Url_path=http://localhost:8080/restContact-0.0.1-SNAPSHOT/rest/contacts/add   
+
+Put-or Modify
+Url_path=http://localhost:8080/restContact-0.0.1-SNAPSHOT/rest/contacts/modify  
+
+
+Option 2
+
+Download the project from https://github.com/shvetha85/ActiveEon/tree/master/restContact and extract & import in to the Eclipse workspace
+
+DO a maven clean install
+Run in the configured Server.
+
+
+
